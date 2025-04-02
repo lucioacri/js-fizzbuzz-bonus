@@ -1,3 +1,5 @@
+//   aggiunto un solo console log
+
 for (let i = 1; i <= 100; i++) {
   let outputText = i;
   if (i % 5 === 0 && i % 3 === 0) {
@@ -10,4 +12,19 @@ for (let i = 1; i <= 100; i++) {
   console.log(outputText);
 }
 
-//   aggiunto un solo console log
+// utilizzo 3 if
+
+for (let i = 101; i <= 200; i++) {
+  let outputText = i;
+  if (i % 3 === 0) {
+    outputText = "Fizz";
+  }
+  if (i % 5 === 0) {
+    outputText = "Buzz";
+  }
+  if (i % 5 === 0 && i % 3 === 0) {
+    outputText = "FizzBuzz";
+  }
+
+  console.log(outputText);
+}
