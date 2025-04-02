@@ -15,16 +15,17 @@ for (let i = 1; i <= 100; i++) {
 // utilizzo 3 if
 
 for (let i = 101; i <= 200; i++) {
-  let outputText = i;
+  let outputText = "";
   if (i % 3 === 0) {
-    outputText = "Fizz";
+    outputText += "Fizz";
   }
   if (i % 5 === 0) {
-    outputText = "Buzz";
+    outputText += "Buzz";
   }
-  if (i % 5 === 0 && i % 3 === 0) {
-    outputText = "FizzBuzz";
-  }
-
-  console.log(outputText);
+  console.log(outputText || i);
 }
+
+//      3    5
+// 3    1    0
+// 5    0    1
+// 15   1    1
